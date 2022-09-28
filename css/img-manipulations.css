@@ -1,0 +1,21 @@
+.fit-image {
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.make-logo-black {
+    filter: contrast(0%);
+    transition: all .5s ease;
+}
+
+.make-logo-black:hover {
+    filter: contrast(100%);
+    transition: all .5s ease;
+}
+
+.logo-wrapper {
+    padding: 10px;
+    padding-top: 50px;
+}
