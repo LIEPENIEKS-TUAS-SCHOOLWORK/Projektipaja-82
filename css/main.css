@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --blue: #0062AB;
+    --green: #5A7568;
+    --orange: #F39517;
+}
+
+* {
+    font-family: lato !important;
+    color: black
+}
+
+button {
+    background-color: var(--blue);
+    color: white;
+    transition: all .5s ease;
+    padding: 0.3rem 1.5rem 0.3rem;
+    border: none;
+
+}
+
+button:hover {
+    background-color: black;
+    transition: all .5s ease;
+
+}
+
+a {
+    color: var(--blue) !important;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    padding: 0px;
+    cursor: pointer !important;
+
+
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--blue);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+a:hover::after,
+a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
+header {
+    padding: 10px;
+    border-bottom: 15px solid #ededed;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    padding: 20px;
+}
+
+p {
+    animation: fadeIn 1s ease;
+}
+
+
+.fitImage {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.makeLogoBlack {
+    filter: contrast(0%);
+    transition: all .5s ease;
+}
+
+.makeLogoBlack:hover {
+    filter: contrast(100%);
+    transition: all .5s ease;
+
+}
+
+.circleRotate:hover {
+    animation-duration: 2s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+  from {
+  transform: rotate(0deg);
+  }
+
+  to {
+  transform: rotate(360deg);
+  }
+}
