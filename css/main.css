@@ -8,9 +8,8 @@
 }
 
 * {
-    font-family: lato !important;
+    font-family: lato;
     color: black;
-    z-index: 1;
 }
 
 button {
@@ -76,23 +75,6 @@ section {
     background-size: 100%;
 }
 
-h2 {
-    padding: 20px;
-}
-
 p {
     animation: fadeIn 1s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
