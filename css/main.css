@@ -19,7 +19,6 @@ button {
     transition: all .5s ease;
     padding: 0.3rem 1.5rem 0.3rem;
     border: none;
-    margin: 10px !important;
 }
 
 button:hover {
@@ -78,6 +77,16 @@ section {
 
 p {
     animation: fadeIn 1s ease;
+}
+
+
+
+textarea{
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    resize: none !important;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .question-container {
