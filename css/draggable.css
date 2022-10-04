@@ -1,0 +1,22 @@
+.dock{
+    min-height: 3rem;
+    min-width: 6rem;
+    background-color: var(--green);
+    color: white;
+}
+
+.draggable{
+    padding: 5px 20px;
+    background-color: var(--blue);
+    color: white;
+    border: 1px solid black;
+    cursor: grab;
+    transition: .5s all;
+    margin: 5px;
+
+}
+.draggable:active{
+    cursor: grabbing;
+    background-color: black;
+    transition: .5s all;
+}

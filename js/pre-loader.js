@@ -12,4 +12,4 @@ const fadeOutEffect = setInterval(() => {
         }
 }, 200);
 
-window.addEventListener('load', fadeOutEffect);
+//window.addEventListener('load', fadeOutEffect);
