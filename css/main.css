@@ -19,7 +19,7 @@ button {
     transition: all .5s ease;
     padding: 0.3rem 1.5rem 0.3rem;
     border: none;
-    margin: 0 20px !important;
+    margin: 10px !important;
 }
 
 button:hover {
