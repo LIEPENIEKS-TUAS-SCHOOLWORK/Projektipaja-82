@@ -24,7 +24,6 @@ button {
 button:hover {
     background-color: black;
     transition: all .5s ease;
-
 }
 
 a {
