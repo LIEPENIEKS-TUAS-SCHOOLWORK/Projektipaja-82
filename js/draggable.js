@@ -9,7 +9,15 @@ function drag(ev) {
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    if (ev.target.firstChild == null) {
-        ev.target.appendChild(document.getElementById(data));
+    var dockId = ev.target.getAttribute('for');
+    var dock = document.getElementById(dockId);
+    if (dock.firstChild == null) {
+        dock.appendChild(document.getElementById(data));
     }
+}
+
+function dropBack(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    document.getElementById('m-dock').appendChild((document.getElementById(data)));
 }

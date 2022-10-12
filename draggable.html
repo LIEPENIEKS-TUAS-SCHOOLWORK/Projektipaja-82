@@ -36,29 +36,56 @@
         </div>
 
         <div class="d-flex w-100 justify-content-center">
-            <div class="w-50 question-container">
+            <div class="question-container">
                 <h3>Question title</h3>
                 <div>
                     <p>Question description</p>
                 </div>
-                <div class="w-100 d-flex justify-content-around align-items-center m-2">
-                    <div><span>Question</span></div>
+                <div class="w-100 p-3">
 
-                    <div class="dock" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                </div>
-                <div class="w-100 d-flex justify-content-around align-items-center m-2">
-                    <div><span>Question</span></div>
+                    <!---- Start of question box --->
+                    <div class="d-flex justify-content-center">
+                        <div class="d-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div class="qd-container" for="dock1">
+                                Question </div>
 
-                    <div class="dock" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                </div>
-                <div class="w-100 d-flex justify-content-around align-items-center m-2">
-                    <div><span>Question</span></div>
+                            <div class="dock text-center" id="dock1"></div>
+                        </div>
+                    </div>
+                    <!---- End of question box ----->
+                    <!---- Start of question box --->
+                    <div class="d-flex justify-content-center">
+                        <div class="d-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div class="qd-container" for="dock2">
+                                Question </div>
 
-                    <div class="dock" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                </div>
-                <div class="w-100 d-flex justify-content-center align-items-center">
-                    <div id="item1" class="draggable" draggable="true" ondragstart="drag(event)">Item1</div><div id="item2" class="draggable" draggable="true" ondragstart="drag(event)">Item2</div><div id="item3" class="draggable" draggable="true" ondragstart="drag(event)">Item3</div>
+                            <div class="dock text-center" id="dock2"></div>
+                        </div>
+                    </div>
+                    <!---- End of question box ----->
+                    <!---- Start of question box --->
+                    <div class="d-flex justify-content-center">
+                        <div class="d-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div class="qd-container" for="dock3">
+                                Question
+                            </div>
 
+                            <div class="dock text-center" id="dock3"></div>
+                        </div>
+                    </div>
+                    <!---- End of question box ----->
+
+                    <div class="text-center" id="m-dock" ondrop="dropBack(event)" ondragover="allowDrop(event)">
+                        <!----start of draggable element--->
+                        <div id="item1" class="draggable" draggable="true" ondragstart="drag(event)">Item1</div>
+                        <!---End of draggable element---->
+                        <!----start of draggable element--->
+                        <div id="item2" class="draggable" draggable="true" ondragstart="drag(event)">Item2</div>
+                        <!---End of draggable element---->
+                        <!----start of draggable element--->
+                        <div id="item3" class="draggable" draggable="true" ondragstart="drag(event)">Item3</div>
+                        <!---End of draggable element---->
+                    </div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <button type="submit">Submit</button>
