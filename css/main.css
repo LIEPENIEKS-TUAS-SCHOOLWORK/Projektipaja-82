@@ -26,6 +26,10 @@ button:hover {
     transition: all .5s ease;
 }
 
+button:focus{
+    background-color: black;
+}
+
 a {
     color: var(--blue) !important;
     font-weight: bold;
@@ -93,6 +97,18 @@ textarea{
     padding: 10px;
     background-color: white;
     width: 50%;
+}
+
+.correct-alert{
+    color: green;
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.incorrect-alert{
+    color: red;
+    background-color: #FFCDD2;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 1200px) {

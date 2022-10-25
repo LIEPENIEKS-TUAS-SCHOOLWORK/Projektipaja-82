@@ -31,23 +31,57 @@
     </header>
 
     <section>
+
+
         <div class="row w-100">
             <h2>Select an answer</h2>
         </div>
+
+        <!-- Question tester--->
+        <div>
+            <div class="question-container my-4">
+                <h3 >Question tester</h3>
+                <div class="p-2">
+                    <label for="Title">Title</label>
+                    <input name="Title" type="text" id="title-input">
+                </div>
+                <div class="p-2">
+                    <label for="Desc">Description</label>
+                    <input name="Desc" type="text" id="desc-input">
+                </div>
+                <div class="p-2">
+                    <button onclick="addQMultiple()">Add new question</button>
+                </div>
+
+                <div id="qTestContainer">
+                    
+                </div>
+
+                <div class="p-2">
+                    <label for="q-select">Correct question</label>
+                    <select name="q-select" id="q-select">
+                        <option selected value="null">---</option>
+                    </select>
+                </div>
+                <div class="p-2">
+                    <button onclick="saveQuestions()">Submit</button>
+                </div>
+
+            </div>
+        </div>
+        <!--- Question tester end--->
+
         <div class="d-flex w-100 justify-content-center">
             <div class="question-container">
-                <h3>Question title</h3>
+                <h3 id="title">Question title</h3>
                 <div>
-                    <p>Question description</p>
+                    <p id="desc">Question description</p>
                 </div>
-                <div class="d-flex flex-column p-2">
-                    <button class="m-1">Answer 1</button>
-                    <button class="m-1">Answer 2</button>
-                    <button class="m-1">Answer 3</button>
-                    <button class="m-1">Answer 4</button>
+                <div class="d-flex flex-column p-2" id="q-container">
+
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="submit">Submit</button>
+                    <button type="submit" onclick="submit()">Submit</button>
                 </div>
             </div>
         </div>
@@ -65,9 +99,13 @@
     <!---Custom--->
     <script src="js/pre-loader.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script src="js/q-tester.js"></script>
 
 
 
-</body>
 
-</html>
+
+
+</body></html>
