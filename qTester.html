@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+
+<body>        <!-- Question tester--->
+        <div>
+            <div class="question-container my-4">
+                <h3 >Question tester</h3>
+                <div class="p-2">
+                    <label for="Title">Title</label>
+                    <input name="Title" type="text" id="title-input">
+                </div>
+                <div class="p-2">
+                    <label for="Desc">Description</label>
+                    <input name="Desc" type="text" id="desc-input">
+                </div>
+                <div class="p-2">
+                    <button onclick="addQMultiple()">Add new question</button>
+                </div>
+
+                <div id="qTestContainer">
+                    
+                </div>
+
+                <div class="p-2">
+                    <label for="q-select">Correct question</label>
+                    <select name="q-select" id="q-select">
+                        <option selected value="null">---</option>
+                    </select>
+                </div>
+                <div class="p-2">
+                    <button onclick="saveQuestions()">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="js/q-tester.js"></script>
+        <!--- Question tester end--->
+    
+    </body>
+
+</html>
